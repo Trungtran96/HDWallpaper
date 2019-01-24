@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/layout_ads"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_ads">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@color/colorPrimary">
+
+                    <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_16sdp"
+                        android:text="Wallpaper"
+                        android:textColor="#fff"
+                        android:id="@+id/title"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_15sdp" />
+
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/search_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        app:theme="@style/AppTheme.Toolbar"/>
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:id="@+id/tab"
+                    app:tabMaxWidth="0dp"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabIndicatorColor="#ff0000"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:tabBackground="@drawable/title_selector"
+                    app:tabIndicatorHeight="@dimen/_1sdp"></android.support.design.widget.TabLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/vp"></android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

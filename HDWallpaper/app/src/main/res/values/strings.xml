@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+
+    <string name="rate_desc">Do you want to rate 5 stars for this application? Please rate and comment to support developer.</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="rate_app">RATE APP</string>
+    <string name="do_not_show_again">Do not show again</string>
+    <string name="later">Later</string>
+
+</resources>

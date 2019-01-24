@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+    <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_app"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp" />
+
+    <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/rate_desc"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/layout_do_not_show_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_do_not_show_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_text"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+
+        <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_not_show_again"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+            android:id="@+id/tv_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:padding="@dimen/_13sdp"
+            android:text="@string/later"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.unsplash.beautiful.hdwallpaper.customs.SSTextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:padding="@dimen/_13sdp"
+            android:text="@string/rate_now"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+</LinearLayout>
